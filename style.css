@@ -1,0 +1,39 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    min-height:100vh;
+    display:flex;
+   justify-content:center;
+   align-items:center;
+}
+div{
+    background-color:aqua;
+    height:300px;
+    width:200px;
+}
+div h2{
+    text-align:center;
+}
+div input[type=number]{
+    width:100%;
+    margin:15px 0px;
+    border-radius:10px;
+}
+
+div input[type=number]:read-only{
+    border:2px;
+    background-color:rgb(47, 102, 213);
+    width:80%;
+    height:30px;
+    margin-left:20px;
+    border-radius:10px;
+    text-align:center;
+    color:rgb(0, 0, 0);
+    font-weight:bold;
+}
+div button{
+    cursor:pointer;
+}

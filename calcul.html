@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>calculatrice</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <meta charset="utf-8">
+    </header>
+    <body>
+        <div>
+            <h2>Calculatrice:</h2><br><hr><br>
+            <input placeholder="number 1" type="number" id="num1">
+            <br>
+         <!--   <input placeholder=" + - / x" type="op" style="width:60px" id="add" id="sub" id="div" id="mul"> -->
+         <button id="add">+</button>
+         <button id="sub">-</button>
+         <button id="mul">x</button>
+         <button id="div">/</button>
+            <br>
+            <input placeholder="number 2" type="number" id="num2">
+            <br>
+         <!--  <button style="width:30px">=</button> -->
+            <br>
+            <input type="number" id="result" readonly >
+        </div>
+        <script type="text/javascript">
+            var a = document.getElementById("num1");
+            var b = document.getElementById("num2");
+            var res = document.getElementById("result");
+            
+            document.getElementById("add").addEventListener("click",function(){
+                
+                res.value = parseInt(a.value)+parseInt(b.value);
+
+            });
+
+            document.getElementById("sub").addEventListener("click",function(){
+                
+                res.value = parseInt(a.value)-parseInt(b.value);
+            });
+            document.getElementById("mul").addEventListener("click",function(){
+                res.value = parseInt(a.value)*parseInt(b.value);
+            });
+            document.getElementById("div").addEventListener("click",function(){
+                res.value = parseInt(a.value)/parseInt(b.value);
+            });
+           
+            document.write("htdtj");
+        </script>
+    </body>
+</html>
